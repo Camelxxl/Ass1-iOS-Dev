@@ -30,20 +30,6 @@ class ViewController: UIViewController {
     }
     
 
-        @IBAction func undo(_ sender: UIButton) {
-            if userTyping, var text = display.text {
-                text.remove(at: text.index(before: text.endIndex))
-                if text.isEmpty || "0" == text {
-                    text = "0"
-                    userTyping = false
-                }
-                display.text = text
-            } else {
-                brain.undo()
-                //displayResult()
-            }
-        
-    }
     
     
     @IBAction func touchDigit(_ sender: UIButton) {

@@ -58,13 +58,7 @@ struct CalculatorBrain{
         accumulator = (operand,"\(operand)")
     }
 
-    
-    
-    
-    mutating func undo() {
 
-    }
-    
     
     
     //Erst prüfen ob accumulator und pendingBinaryOperation schon gesetzt wurden, erst dann kann man die Perform Methode anwenden, da dann der erste Operand schon vorhanden ist
@@ -105,17 +99,6 @@ struct CalculatorBrain{
         }
         
     }
-    
-
-    
-//    func evaluate(using variables: Dictionary<String,Double>? = nil)
-//        -> (result: Double?, isPending: Bool, description: String)
-//    {
-//        
-//        return (result, nil != pendingBinaryOperation, description! )
-//        
-//        
-//    }
     
     
     

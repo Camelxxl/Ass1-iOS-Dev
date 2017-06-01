@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DD63857E1E9D06F1003E3860"
-               BuildableName = "CalculatorApp.app"
-               BlueprintName = "CalculatorApp"
-               ReferencedContainer = "container:CalculatorApp.xcodeproj">
+               BuildableName = "CalculatorApp Assignment 2.app"
+               BlueprintName = "CalculatorApp Assignment 2"
+               ReferencedContainer = "container:CalculatorApp Assignment 2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DD63857E1E9D06F1003E3860"
-            BuildableName = "CalculatorApp.app"
-            BlueprintName = "CalculatorApp"
-            ReferencedContainer = "container:CalculatorApp.xcodeproj">
+            BuildableName = "CalculatorApp Assignment 2.app"
+            BlueprintName = "CalculatorApp Assignment 2"
+            ReferencedContainer = "container:CalculatorApp Assignment 2.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DD63857E1E9D06F1003E3860"
-            BuildableName = "CalculatorApp.app"
-            BlueprintName = "CalculatorApp"
-            ReferencedContainer = "container:CalculatorApp.xcodeproj">
+            BuildableName = "CalculatorApp Assignment 2.app"
+            BlueprintName = "CalculatorApp Assignment 2"
+            ReferencedContainer = "container:CalculatorApp Assignment 2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DD63857E1E9D06F1003E3860"
-            BuildableName = "CalculatorApp.app"
-            BlueprintName = "CalculatorApp"
-            ReferencedContainer = "container:CalculatorApp.xcodeproj">
+            BuildableName = "CalculatorApp Assignment 2.app"
+            BlueprintName = "CalculatorApp Assignment 2"
+            ReferencedContainer = "container:CalculatorApp Assignment 2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -86,6 +86,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "CalculatorApp Assignment 2"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

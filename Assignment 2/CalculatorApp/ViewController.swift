@@ -9,12 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-
+    
+    
     @IBOutlet weak var Description: UILabel!
     
-
+    
     @IBOutlet weak var display: UILabel!
+    
+    private var variables = Dictionary<String,Double>()
+    {
+        didSet {
+            if let Value = variables["M"]{
+                
+                mValue.text = "M=" + String(describing: Value)
+            }else{
+            
+            mValue.text = ""
+            }
+                    }
+        
+    
+    }
+
+    @IBOutlet weak var mValue: UILabel!
     
     var userTyping = false
     
@@ -29,11 +46,25 @@ class ViewController: UIViewController {
         }
     }
     
-
+    
+    @IBAction func useM(_ sender: UIButton) {
+        brain.setOperand(variable: "M")
+        userTyping = false
+        displayResultAndHis()
+        
+    }
+    
+    
+    @IBAction func setM(_ sender: UIButton)
+    {
+        variables["M"] = displayValue
+        userTyping = false
+        displayResultAndHis()
+    }
     
     
     @IBAction func touchDigit(_ sender: UIButton) {
-      
+        
         let digit = sender.currentTitle!
         if userTyping {
             let textInDisplay = display.text
@@ -48,8 +79,8 @@ class ViewController: UIViewController {
     
     @IBAction func floatingPoint(_ sender: Any) {
         if(!display.text!.contains(".")){
-             display.text!.append(".")
-            }
+            display.text!.append(".")
+        }
     }
     
     
@@ -59,6 +90,7 @@ class ViewController: UIViewController {
     
     @IBAction func performOperation(_ sender: UIButton) {
         
+        
         if(userTyping){
             brain.setOperand(displayValue)
             userTyping = false
@@ -66,34 +98,56 @@ class ViewController: UIViewController {
         if let mathematicalSymbol = sender.currentTitle {
             brain.performOperation(mathematicalSymbol)
         }
-        if let result = brain.result {
+        
+        displayResultAndHis()
+    }
+    
+    private func displayResultAndHis(){
+        
+        let evaluieren = brain.evaluate(using: variables)
+        
+        if let result = evaluieren.result{
             displayValue = result
         }
         
-        displayHistory()
-    }
-    
-    
-    private func displayHistory(){
-     
-        if let description = brain.description {
-            Description.text = description + (brain.resultIsPending ? "…" : "=")
+        let description = evaluieren.description
+        
+        if description != ""
+        {
+            Description.text = description + (brain.evaluate(using: variables).isPending ? "…" : "=")
         } else {
             Description.text = " "
         }
-    
-    
+        
+        
     }
+    
+    @IBAction func undo(_ sender: UIButton) {
+        
+        if userTyping, var text = display.text {
+            text.remove(at: text.index(before: text.endIndex))
+            if text.isEmpty || "0" == text {
+                text = "0"
+                userTyping = false
+            }
+            display.text = text
+        }  else {
+            brain.undo()
+            displayResultAndHis()
+        }
+    }
+    
+
     
     
     @IBAction func clear(_ sender: Any) {
         displayValue = 0
         userTyping = false
-        Description.text = ""
+        Description.text = String(describing: 0.0)
         brain = CalculatorBrain()
-
+        variables["M"] = 0
     }
     
-
+    
 }
 

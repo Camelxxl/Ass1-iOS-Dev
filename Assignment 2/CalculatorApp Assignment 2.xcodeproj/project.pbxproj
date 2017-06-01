@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DD63857F1E9D06F1003E3860 /* CalculatorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD63857F1E9D06F1003E3860 /* CalculatorApp Assignment 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CalculatorApp Assignment 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD6385821E9D06F1003E3860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD6385841E9D06F1003E3860 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD6385871E9D06F1003E3860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		DD6385801E9D06F1003E3860 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DD63857F1E9D06F1003E3860 /* CalculatorApp.app */,
+				DD63857F1E9D06F1003E3860 /* CalculatorApp Assignment 2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,9 +78,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DD63857E1E9D06F1003E3860 /* CalculatorApp */ = {
+		DD63857E1E9D06F1003E3860 /* CalculatorApp Assignment 2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD6385911E9D06F1003E3860 /* Build configuration list for PBXNativeTarget "CalculatorApp" */;
+			buildConfigurationList = DD6385911E9D06F1003E3860 /* Build configuration list for PBXNativeTarget "CalculatorApp Assignment 2" */;
 			buildPhases = (
 				DD63857B1E9D06F1003E3860 /* Sources */,
 				DD63857C1E9D06F1003E3860 /* Frameworks */,
@@ -90,9 +90,9 @@
 			);
 			dependencies = (
 			);
-			name = CalculatorApp;
+			name = "CalculatorApp Assignment 2";
 			productName = CalculatorApp;
-			productReference = DD63857F1E9D06F1003E3860 /* CalculatorApp.app */;
+			productReference = DD63857F1E9D06F1003E3860 /* CalculatorApp Assignment 2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DD63857A1E9D06F1003E3860 /* Build configuration list for PBXProject "CalculatorApp" */;
+			buildConfigurationList = DD63857A1E9D06F1003E3860 /* Build configuration list for PBXProject "CalculatorApp Assignment 2" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -124,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DD63857E1E9D06F1003E3860 /* CalculatorApp */,
+				DD63857E1E9D06F1003E3860 /* CalculatorApp Assignment 2 */,
 			);
 		};
 /* End PBXProject section */
@@ -297,7 +297,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DD63857A1E9D06F1003E3860 /* Build configuration list for PBXProject "CalculatorApp" */ = {
+		DD63857A1E9D06F1003E3860 /* Build configuration list for PBXProject "CalculatorApp Assignment 2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD63858F1E9D06F1003E3860 /* Debug */,
@@ -306,7 +306,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD6385911E9D06F1003E3860 /* Build configuration list for PBXNativeTarget "CalculatorApp" */ = {
+		DD6385911E9D06F1003E3860 /* Build configuration list for PBXNativeTarget "CalculatorApp Assignment 2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD6385921E9D06F1003E3860 /* Debug */,
